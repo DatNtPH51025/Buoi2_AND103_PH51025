@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab1_PH51025_NguyenTienDat</string>
+    <string name="fogot"><u>Forgot password?</u></string>
+    <string name="SignUp">  <b>Sign Up</b></string>
+</resources>

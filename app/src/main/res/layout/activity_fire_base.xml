@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100px"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="154dp"
+        android:layout_marginTop="150px"
+        android:layout_marginBottom="100px"
+        android:gravity="center"
+        android:src="@drawable/social" />
+
+    <Button
+        android:id="@+id/btnLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30px"
+        android:backgroundTint="#4BFF00"
+        android:drawableLeft="@drawable/baseline_alternate_email"
+        android:text="LOGIN WITH EMAIL"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnLoginPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FFC107"
+        android:drawableLeft="@drawable/baseline_call"
+        android:text="LOGIN WITH THE PHONE"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>
