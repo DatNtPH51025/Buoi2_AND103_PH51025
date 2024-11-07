@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(userAdapter);
 
         ghiDulieu();
-        docDulieu();
+
 
         findViewById(R.id.btnlogout).setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, FireBaseActivity.class);
@@ -119,8 +119,12 @@ public class MainActivity extends AppCompatActivity {
         users.get().addOnCompleteListener(task -> {
             if (task.isSuccessful() && task.getResult().isEmpty()) {
                 addDefaultUsers(users);
+            } else {
+                docDulieu();
             }
         });
+
+
     }
 
     private void addDefaultUsers(CollectionReference users) {
@@ -180,6 +184,8 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Log.e(TAG, "Error adding user u4", task.getException());
             }
+
+            docDulieu();
         });
     }
 
